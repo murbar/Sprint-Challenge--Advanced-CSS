@@ -1,6 +1,7 @@
 .page-header {
-    background: #eee;
+    background: @nav-bg;
     padding: 10px 0;
+    border-bottom: 2pxs solid @nav-border;
     .logotype h1 {
         font-size: 4rem;
         text-align: center;
@@ -12,9 +13,12 @@
         }
         a {
             text-decoration: none;
-            color: inherit;
+            color: @nav-font;
             font-size: 1.6rem;
             padding: 10px 15px;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
