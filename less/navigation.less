@@ -1,1 +1,31 @@
-// Navigation code here
+.page-header {
+    background: rgba(@nav-bg, 0.8);
+    padding: 10px 0;
+    border-bottom: 2pxs solid @nav-border;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 10px #444;
+    // make header opaque when hovered for readability of nav items
+    &:hover {
+        background: @nav-bg;
+    }
+    .logotype h1 {
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    nav {
+        ul {
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.6rem;
+            padding: 10px 15px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,1 +1,21 @@
-// Mixins Here
+.default-btn(@font-color: white, @bg-color: @header-font-color) {
+    display: inline-block;
+    color: @font-color;
+    background: @bg-color;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0.7rem 1.7rem;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    &:hover {
+        color: @bg-color;
+        background: @font-color;
+        border: 2px solid @bg-color;
+        cursor: pointer;
+    }
+}
+.center-content() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

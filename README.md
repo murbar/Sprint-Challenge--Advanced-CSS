@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+> Both adaptive design and responsive design allow a web page to change the way content is displayed based on the size of a device's viewport. Adaptive design is generally not a versatile as responsive. Designs are made for specific device sizes and typically "snap" from one view to another. Responsive designs are less brittle and generally easier to build. They "respond" to viewports of *any size*, usually with a more fluid transition between each. Responsive design is the default for building modern web sites and applications. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+> Mobile-first means to design for the smallest device first and add breakpoints where they make sense to optimize for larger devices. Desktop-first is designing for the desktop first and later optimizing for progressively smaller devices. Practically, the difference is media queries with a `min-width` property for mobile-first, and a `max-width` property for desktop-first.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+> When the user's default font size is 16px, `font-size: 62.5%` on the `html` tag normalizes the `rem` unit to 10px. This makes it easier to reason about sizes measured in `rem` units.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+> CSS preprocessing layers some features on top of plain CSS that save us time and make us more productive. We can take advantage of things like variables, mixins (functions), importing, and output optimization to make a large codebase more modular and easier to maintain.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+> Variables may be the most simple yet powerful feature of CSS preprocessors. You can change a couple lines of code and the effects can cascade through 1000's of lines of CSS and completely change the design of your project. I find the tooling can be a bit complicated. Installing and getting the compiler to work can be a lot of work in some cases.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
