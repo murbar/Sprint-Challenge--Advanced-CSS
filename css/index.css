@@ -161,9 +161,15 @@ p {
   margin: 0 auto;
 }
 .page-header {
-  background: #F6F6F6;
+  background: rgba(246, 246, 246, 0.8);
   padding: 10px 0;
   border-bottom: 2pxs solid #F1F1F1;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 10px #444;
+}
+.page-header:hover {
+  background: #F6F6F6;
 }
 .page-header .logotype h1 {
   font-size: 4rem;
@@ -191,6 +197,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 120px;
 }
 .home .intro img {
   border-radius: 6px;
